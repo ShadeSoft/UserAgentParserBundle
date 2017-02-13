@@ -1,0 +1,22 @@
+{
+  "name": "shadesoft/user-agent-parser-bundle",
+  "description": "A small bundle for returning a visitor's used browser and operating system from the UserAgent.",
+  "keywords": ["user", "agent", "browser", "operating system", "os", "symfony", "bundle"],
+  "type": "symfony-bundle",
+  "license": "MIT",
+  "homepage": "https://github.com/ShadeSoft/UserAgentParserBundle",
+  "authors": [
+    {
+      "name": "Szabolcs Surányi",
+      "homepage": "http://shadesoft.hu"
+    }
+  ],
+  "autoload": {
+    "psr-4": { "ShadeSoft\\UserAgentParserBundle": "" }
+  },
+  "require": {
+    "php": ">=5.6",
+    "symfony/symfony": ">=2.8"
+  },
+  "target-dir": "ShadeSoft/UserAgentParserBundle"
+}

@@ -1,0 +1,4 @@
+services:
+    shadesoft_user_agent_parser.parser:
+        class: ShadeSoft\UserAgentParserBundle\Service\UserAgentParser
+        arguments: []
