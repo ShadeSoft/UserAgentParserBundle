@@ -43,3 +43,33 @@ class AppKernel extends Kernel
     // ...
 }
 ```
+
+## Usage:
+
+```php
+<?php
+// src/Acme/DemoController.php
+
+// ...
+class DemoController extends Controller
+{
+    public function DemoAction(Request $request) {
+        // ...
+        
+        $uaParser = $this->get('shadesoft_user_agent_parser.parser');
+        $ua = $request->headers->get('User-Agent');
+        
+        $browser = $uaParser->getBrowser($ua);
+        $browserName    = $browser['name'];
+        $browserVersion = $browser['version'];
+        
+        $os = $uaParser->getOS($ua);
+        $osName     = $os['name'];
+        $osVersion  = $os['version'];
+        
+        // ...
+    }
+    
+    // ...
+}
+```
