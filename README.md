@@ -1,5 +1,7 @@
 # User Agent Parser Bundle for Symfony
 
+> ABANDONED - Please use [whichbrowser](https://whichbrowser.net) instead.
+> 
 > A small bundle for returning a visitor's used browser and operating system from the UserAgent.
 
 ## Installation
